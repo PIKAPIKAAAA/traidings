@@ -8,9 +8,6 @@ def main():
     df['Close'].plot()
     plt.savefig('graphs/aapl.png')
 
-if __name__ == "__main__":
-    main()
-
 def get_max_close(symbol):
     df = pd.read_csv(f"{symbol}.csv")
     return df['Close'].max()
